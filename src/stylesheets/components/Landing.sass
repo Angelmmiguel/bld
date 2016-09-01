@@ -1,0 +1,36 @@
+$d_landing_height: 16px
+
+.Landing
+  max-width: $d_landing_width
+  margin: $d_size_xlg auto
+
+  &__GameName
+    text-align: center
+    margin: $d_size_xlg 0 $d_size_lg
+    font-size: 11em
+    font-weight: bold
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      margin-top: -($d_landing_height / 2)
+      background-color: $c_text
+      height: $d_landing_height
+      width: 100%
+      bottom: 0
+      left: 0
+      -ms-transform: rotate(7deg)
+      -webkit-transform: rotate(7deg)
+      transform: rotate(7deg)
+
+  &__GameDescription,
+  &__GameStart
+    text-align: center
+
+  &__GameStart
+    margin-top: 4em
+
+    .btn
+      transition: all 1.5s ease-out

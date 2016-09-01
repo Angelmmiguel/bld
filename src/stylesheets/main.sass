@@ -1,0 +1,28 @@
+// Variables
+@import "vars/all"
+
+// Utils
+@import "utils/all"
+
+// Other styles
+@import "base/all"
+@import "modules/all"
+@import "components/all"
+@import "containers/all"
+
+// Base
+body
+  font-family: Arial, sans-serif
+  background-color: $c_background
+  color: $c_text
+  font-size: $d_text
+  line-height: $d_line_height
+
+// Anchors
+a
+  text-decoration: none
+  color: $c_text
+
+  &:hover
+    text-decoration: underline
+    color: $c_text
