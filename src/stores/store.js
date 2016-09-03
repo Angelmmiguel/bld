@@ -1,6 +1,6 @@
 // Initialize the global store
 import { createStore } from 'redux'
-import Reducer from '../reducers/reducer';
+import GameReducer from '../reducers/gameReducer';
 
 // Return the store
-export default createStore(Reducer);
+export default createStore(GameReducer);

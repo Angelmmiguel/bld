@@ -1,0 +1,19 @@
+.Item
+  width: $d_items_width
+  height: $d_items_height
+  padding: $d_items_padding
+  background-color: $c_background_dark
+  border-radius: $d_items_radius
+  text-align: center
+
+  &__Empty
+    color: lighten($c_background, 10%)
+    line-height: $d_items_line_height
+
+  &__Item
+    line-height: $d_items_line_height
+
+    .Item__Image
+      width: 1em
+      display: inline-block
+      margin-right: $d_relative_size_sm

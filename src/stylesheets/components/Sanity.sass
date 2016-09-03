@@ -1,0 +1,21 @@
+.Sanity
+  width: 100%
+  height: $d_sanity_height
+  padding: $d_sanity_padding
+  border-radius: $d_sanity_radius
+  background-color: darken($c_background, 5%)
+  box-sizing: border-box
+
+  &__Current
+    height: $d_sanity_height - (2 * $d_sanity_padding)
+    transition: width 1s ease-out, background-color 1s ease-out
+    border-radius: $d_sanity_radius
+
+  &__High
+    background-color: $c_sanity_high
+
+  &__Medium
+    background-color: $c_sanity_medium
+
+  &__Low
+    background-color: $c_sanity_low

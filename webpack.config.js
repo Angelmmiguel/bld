@@ -33,19 +33,13 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  externals: {
-    // Use external version of
-    "react": "React",
-    "react-dom": "ReactDOM",
-    "react-router": "ReactRouter"
-  },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development') }
     }),
     new HtmlWebpackPlugin({
-      title: 'React Boilerplate',
+      title: 'Blind',
       template: "index.html",
       filename: "index.html",
       minify: false
